@@ -4,14 +4,19 @@
     margin: 0;
 }
 
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+}
+
 body {
     background-color: #d9dcd6;
 }
-
-.content {
-    width: 100%;
-}
-
+/* header css */
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -40,13 +45,9 @@ body {
     margin-left: 25px;
 }
 
-a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-p {
-    font-size: 16px;
+/* pictures in the middle */
+.work {
+    height: 1200px;
 }
 
 .about-me{
@@ -56,11 +57,17 @@ p {
     background-color: teal;
 }
 
+
 .about-me p {
     font-size: 20px;
     line-height: 2;
     background-color: teal;
 }
+
+.about-me h2 {
+    text-decoration: underline;
+}
+
 .about-me img {
     min-height: 500px;
 }
@@ -70,5 +77,58 @@ p {
 }
 
 
-.work {
+.header-body{
+    font-size: 60px;
+    margin:100px 0 0 300px;
+}
+
+.content-body img {
+    float: right ;
+    display: flex;
+    flex-wrap: wrap
+}
+
+.body-text p{
+ clear: right
+}
+
+.body-image img{
+    min-height: 200px;
+}
+
+
+/* links on the bottom */ 
+
+.contact-info {
+    margin-bottom: 15px;
+}
+
+.contact {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #120750;
+    color: #ffffff;
+    display:inline-block;
+    width: 100%;
+}
+
+.contact h2 {
+    font-size: 48px;
+    float: left;
+}
+
+
+.contact div {
+    margin-right: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+}
+
+.links {
+    float:right;
+}
+
+.contact div ul li {
+    display: inline-block;
+    margin-left: 25px;
 }
