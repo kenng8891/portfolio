@@ -47,9 +47,17 @@ body {
 
 /* pictures in the middle */
 .work {
-    height: 1200px;
+    height: 1100px;
+    background-color: bisque;
 }
 
+.work h2 {
+    text-align: left;
+}
+
+.work p {
+    font-size: 50px;
+}
 .about-me{
     text-align: center;
     font-size: 40px;
@@ -69,7 +77,7 @@ body {
 }
 
 .about-me img {
-    min-height: 500px;
+    height: 500px;
 }
 .float-left {
     float: left;
@@ -79,24 +87,44 @@ body {
 
 .header-body{
     font-size: 60px;
-    margin:100px 0 0 300px;
+    margin:0 0 0 300px;
+    left: 0px;
+    position: absolute;
 }
 
-.content-body img {
-    float: right ;
-    display: flex;
-    flex-wrap: wrap
+.content-body {
+    align-items: flex-start;
+    display:flex;
+    flex-wrap: wrap;
+    position: absolute;
+    right: 0px;
+    width: 800px;
+    margin-right: 0px;
+    object-fit: cover;
 }
 
-.body-text p{
- clear: right
-}
-
-.body-image img{
+.element img{
     min-height: 200px;
+    display:block;
+    min-width: 400px;
+    position: relative;
+    top: -100px;
+    border-style:groove;
 }
 
+.element1 img {
+    display:block;
+    width: 800px;
+    height: 400px;
+}
 
+.body-text {
+    position:absolute;
+    z-index: 1;
+    border-style: double;
+    color:red;
+    
+}
 /* links on the bottom */ 
 
 .contact-info {
