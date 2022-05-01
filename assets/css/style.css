@@ -2,15 +2,12 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    border-top: 0px;
 }
 
 a {
     color: #ffffff;
     text-decoration: none;
-}
-
-p {
-    font-size: 16px;
 }
 
 body {
@@ -19,25 +16,25 @@ body {
 /* header css */
 .header {
     padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #120750;
     color: #ffffff;
-}
-
-.header h1 {
-    display: inline-block;
-    font-size: 48px;
-}
-
-.header h1 .seo {
-    color: #d9dcd6;
-}
-
-.header div {
-    margin-right: 20px;
-    float: right;
+    display:inline-block;
+    width: 100%;
+    font-size: 2vw;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 40px;
+}
+
+.header-name h1{
+    float: left;
+    font-size: 2vw;
+}
+
+.header-links{
+    float:right;
+}
+
+.header ul a {
+    font-size: 2vw;
 }
 
 .header div ul li {
@@ -47,8 +44,9 @@ body {
 
 /* pictures in the middle */
 .work {
-    height: 1100px;
+    min-height: 1100px;
     background-color: bisque;
+    background-size: contain;
 }
 
 .work h2 {
@@ -60,25 +58,38 @@ body {
 }
 .about-me{
     text-align: center;
-    font-size: 40px;
-    height: 500px;
+    font-size: 2vw;
+    width: 100%;
     background-color: teal;
+    resize: both;
+    overflow: auto;
 }
 
 
 .about-me p {
-    font-size: 20px;
     line-height: 2;
     background-color: teal;
 }
 
 .about-me h2 {
     text-decoration: underline;
+    font-size: 2vw;
+    text-align: center;
 }
 
 .about-me img {
     height: 500px;
 }
+
+
+
+.title-body h2 {
+    font-size: 60px;
+}
+.title-body p {
+    font-size: 2vw;
+}
+
 .float-left {
     float: left;
     margin-right: 25px;
@@ -87,11 +98,24 @@ body {
 
 .header-body{
     font-size: 60px;
-    margin:0 0 0 300px;
     left: 0px;
     position: absolute;
 }
 
+.header-body h2 {
+    text-align: center;
+}
+
+.work-body {
+    align-items: flex-start;
+    display:flex;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 0px;
+    width: 800px;
+    height: 1100px;
+    background-color: red;
+}
 .content-body {
     align-items: flex-start;
     display:flex;
@@ -99,18 +123,18 @@ body {
     position: absolute;
     right: 0px;
     width: 800px;
-    margin-right: 0px;
-    object-fit: cover;
 }
 
+
 .element img{
-    min-height: 200px;
+    height: 350px;
     display:block;
-    min-width: 400px;
+    width: 400px;
     position: relative;
-    top: -100px;
     border-style:groove;
+
 }
+
 
 .element1 img {
     display:block;
@@ -122,9 +146,11 @@ body {
     position:absolute;
     z-index: 1;
     border-style: double;
-    color:red;
-    
+    color:white;
+    right:auto;
+    background-color: purple;
 }
+
 /* links on the bottom */ 
 
 .contact-info {
@@ -133,30 +159,40 @@ body {
 
 .contact {
     padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #120750;
     color: #ffffff;
     display:inline-block;
     width: 100%;
+    font-size: 2vw;
 }
 
 .contact h2 {
-    font-size: 48px;
-    float: left;
+    font-size: 2vw;
+    width: 100%;
 }
 
 
 .contact div {
-    margin-right: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 40px;
 }
 
-.links {
-    float:right;
+
+.links a {
+    font-size: 20px;
+    font-size: 2vw;
+    
 }
 
 .contact div ul li {
     display: inline-block;
     margin-left: 25px;
+    right:0px;
+}
+
+.footer-title {
+    float: left;
+}
+
+.links {
+    float: right;
 }
