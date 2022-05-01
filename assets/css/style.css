@@ -9,8 +9,6 @@ a {
     color: #ffffff;
     text-decoration: none;
 }
-
-}
 body {
     background-color: #d9dcd6;
 }
@@ -44,19 +42,13 @@ body {
 }
 
 /* pictures in the middle */
+
 .work {
     min-height: 1100px;
     background-color: bisque;
     background-size: contain;
 }
 
-.work h2 {
-    text-align: left;
-}
-
-.work p {
-    font-size: 50px;
-}
 .about-me{
     text-align: center;
     font-size: 2vw;
@@ -64,8 +56,8 @@ body {
     background-color: teal;
     resize: both;
     overflow: auto;
+    
 }
-
 
 .about-me p {
     line-height: 2;
@@ -82,8 +74,6 @@ body {
     height: 500px;
 }
 
-
-
 .title-body h2 {
     font-size: 60px;
 }
@@ -93,18 +83,14 @@ body {
 
 .float-left {
     float: left;
-    margin-right: 25px;
 }
 
 
 .header-body{
     font-size: 60px;
     left: 0px;
-    position: absolute;
-}
-
-.header-body h2 {
     text-align: center;
+    margin: 100px 0 0 100px;
 }
 
 .work-body {
@@ -112,59 +98,75 @@ body {
     display:flex;
     flex-wrap: wrap;
     position: absolute;
+    text-align: center;
     left: 0px;
     width: 50%;
     height: 1100px;
     background-color: red;
 }
 .content-body {
-    align-items: flex-start;
-    display:flex;
-    flex-wrap: wrap;
     position: absolute;
     right: 0px;
     width: 50%;
     height: 1100px;
 }
 
-.element2 {
-    width: 100%;
-    display: inline-block
+.body-image { 
+    max-width: 413.25px;
 }
-
-.element2 img{
-    height: 100%;
-    width: 100%;
-    vertical-align: top;
-}
-
-.element img{
-    height: 300px;
-    width: 50%;
-    position: relative;
-    border-style:groove;
-}
-.element1{
-    height: 500px;
+.element1 {
+    height: 550px;
     width: 100%;
 }
 
 .element1 img{
     width: 100%;
-    height: 500px;
+    height: 550px;
 }
 
+.element1 a {
+    font-size: 30px;
+}
+
+.element2 {
+    display:flex;
+    flex-wrap: nowrap;
+    width: 100%
+}
+
+.element2 img {
+    vertical-align: top;
+    width: 100%;
+    height: 275px;
+    min-width: 0;
+}
+
+.element3 {
+    display:flex;
+    flex-wrap: nowrap;
+    width: 100%
+}
+
+.element3 img {
+    vertical-align: top;
+    width: 100%;
+    height: 275px;
+}
+
+.element2, .element3{
+    background-color: green;
+}
 .body-text {
     position:absolute;
     z-index: 1;
     border-style: double;
     color:white;
-    right:auto;
+    right: auto;
     background-color: purple;
 }
 
 .body-text p {
-    font-size: 40px;
+    font-size: 30px;
 }
 /* links on the bottom */ 
 
